@@ -1,0 +1,18 @@
+#################################################################################
+#                                Build options                                  #
+#################################################################################
+
+# Conversion from string to string
+option(NANOJSONCPP_USE_CPP17_FROM_CHARS_TO_CHARS "Use C++17 std::from_char() and std::to_char() for string to/from numeric types conversion. These are the most efficient standard functions. Disable only if your compiler does not support them or if the induced memory footprint is too big." ON)
+
+# Data types
+option(NANOJSONCPP_32BITS_SIZE_T "Allow the parsing of JSON string of more than 65535 bytes : double RAM memory consumption of json_value_desc" OFF)
+option(NANOJSONCPP_32BITS_INT_T "Use int32_t as the data type to manipulate integer values instead of int64_t : may reduce code size and increase code speed but reduce integer range" OFF)
+option(NANOJSONCPP_32BITS_FLOAT_T "USe float as the data type to manipulate floating point values instead of double : may reduce code size and increase code speed but reduce floating point range and precision" OFF)
+
+# Unit tests
+option(BUILD_UNIT_TESTS "Build unit tests" ON)
+option(BUILD_PERF_TESTS "Build performance tests" OFF)
+
+# Code coverage using gcov
+option(ENABLE_GCOV_COVERAGE "Branch coverage using gcov" ON)
