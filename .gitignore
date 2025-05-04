@@ -1,0 +1,6 @@
+bin
+build
+coverage
+*.pyc
+.vscode/settings.json
+CMakePresets.json
