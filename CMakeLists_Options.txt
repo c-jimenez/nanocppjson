@@ -1,0 +1,10 @@
+#################################################################################
+#                                Build options                                  #
+#################################################################################
+
+# Unit tests
+option(BUILD_UNIT_TESTS "Build unit tests" ON)
+option(BUILD_PERF_TESTS "Build performance tests" OFF)
+
+# Code coverage using gcov
+option(ENABLE_GCOV_COVERAGE "Branch coverage using gcov" ON)

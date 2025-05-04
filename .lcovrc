@@ -1,0 +1,14 @@
+# Configuration file for coverage output
+
+# Thresholds for line coverage
+genhtml_hi_limit = 95
+genhtml_med_limit = 80
+
+# Thresholds for function coverage
+genhtml_function_hi_limit = 95
+genhtml_function_med_limit = 80
+
+# Thresholds for branch coverage
+genhtml_branch_hi_limit = 95
+genhtml_branch_med_limit = 80
+
