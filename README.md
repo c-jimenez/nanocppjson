@@ -226,7 +226,7 @@ else
 }
 ```
 
-**Note**: During the parse operation, the ***input JSON string is not modified***, so a constant string can be used as input to the `nanojsoncpp::generate_XXX()`.
+**Note**: During the parse operation, the ***input JSON string is not modified***, so a constant string can be used as input to the `nanojsoncpp::parse()`.
 
 ## The json_value object
 
