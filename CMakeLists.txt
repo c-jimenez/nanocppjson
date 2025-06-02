@@ -48,7 +48,7 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
     endif()
 
     # Warnings
-    set(WARNING_FLAGS "-Wall -Wextra -Wconversion -Werror")
+    set(WARNING_FLAGS "-Wall -Wextra -Wconversion -Wshadow -Werror")
 
     set(COMMON_FLAGS            "${COVERAGE_FLAGS} -finline-functions")
     set(CMAKE_C_FLAGS_DEBUG     "${CMAKE_C_FLAGS_DEBUG_INIT} ${WARNING_FLAGS} ${COMMON_FLAGS} -Og -g3 -ggdb3 -DDEBUG -fno-omit-frame-pointer")
@@ -75,7 +75,7 @@ endif()
 # 3rd party libraries
 add_subdirectory(3rdparty)
 
-# YaCppRtos sources
+# Sources
 add_subdirectory(src)
 
 # Unit tests
